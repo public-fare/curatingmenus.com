@@ -1,0 +1,147 @@
+$bp-small: 21.75rem;   // 522px
+$bp-med: 32rem;        // 768px
+$bp-lg: 42.5rem;       // 1020px
+
+$gutter: 1.875rem;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  padding: 0;
+}
+
+header,
+main {
+  display: flex;
+  flex-flow: column;
+  margin: 2rem;
+  max-width: 11.5rem;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+  margin: 2rem;
+}
+
+.footer-content {
+  max-width: 11.5rem;
+}
+
+
+@media (min-width: $bp-med) {
+  header,
+  main,
+  .footer-content {
+    max-width: 15.75rem;
+  }
+}
+
+main {
+  flex: 1;
+  padding-bottom: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: $line-height;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: $line-height;
+  margin-top: 0;
+}
+
+section {
+  margin-bottom: $line-height;
+  margin-top: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin-bottom: .7rem;
+    margin-left: $line-height;
+    padding-left: 1.15rem;
+  }
+
+  li::before {
+    content: '◦';
+    float: left;
+    margin-left: ($gutter * -1);
+    margin-top: .1rem;
+  }
+}
+
+a {
+  color: color(steel-blue, mid);
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: color(shark-gray, x-light);
+}
+
+a:visited {
+  color: color(steel-blue, mid);
+}
+
+.leader-link {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: $line-height;
+  margin-top: 0;
+
+  a {
+    border: .5px solid color(steel-blue, mid);
+    display: flex;
+    justify-content: center;
+    min-width: 5.75rem;
+    padding: .7rem;
+  }
+}
+
+// Media queries
+@media (min-width: $bp-med) {
+  .leader-link {
+    flex-flow: row;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $bp-lg) {
+  header,
+  main,
+  .footer-content {
+    margin-left: 11.5rem;
+    margin-right: 2.5rem;
+    max-width: 31rem;
+  }
+
+  .leader-link {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,10 @@
+label,gloss,datatype,missing,creator,description
+id,identifier for the menu item,id,no,web application,
+menu_page_id,id of the page the menu item is on,id,no,web application,corresponds to MenuPage.csv id
+price,first price of menu item,float,yes,volunteer transcribers,
+high_price,"if the item has more than on price on a single menu, the highest price",float,yes,volunteer transcribers,"If there are more than two values for price, the web application instructs volunteers to enter the lowest and highest prices rather than all values."
+dish_id,id of the dish,id,yes,web application,corresponds to dish.csv id
+created_at,date/time of first transcription,datetime UTC (YYYY-MM-DD HH:MM:SS UTC),no,web application,
+updated_at,date/time of the last edit to the value,datetime UTC (YYYY-MM-DD HH:MM:SS UTC),no,web application,"Usually, the updated time would be the time of the review."
+xpos,horizontal coordinate on the page for the upper left point where menu item is on the page,float,no,web application,This is where the green arrow on the What’s On The Menu? site sits to show people what to transcribe.
+ypos,vertical coordinate on the page for the upper left point where the menu item is on the page,float,no,web application,This is where the green arrow on the What’s On The Menu? site sits to show people what to transcribe.

@@ -1,0 +1,14 @@
+<div class="article-title">
+  <h2 class="article-main-title">{{ page.title }}</h2>
+  <h3 class="article-sub-title">{{ page.subtitle}}</h3>
+</div>
+<div class="post-metadata">
+    <ul class="author-list">
+    {% for name in page.authors %}
+    {% assign author = site.data.authors[name] %}
+      <li><span itemprop="author">{{ author.name }}</span>, <a href="https://twitter.com/{{ author.handle}}">@{{ author.handle}}</a></li>
+    {% endfor %}
+    </ul>
+    <p itemprop="datePublished">{{ page.pubdate | date: "%B %e, %Y" }}</p>
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a></p>
+</div>

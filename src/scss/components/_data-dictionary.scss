@@ -1,0 +1,81 @@
+$shadow-color-stop-1: hsla(0, 0%, 0%, 0);
+$shadow-color-stop-2: hsla(0, 0%, 0%, .2);
+$shadow-color-stop-3: hsla(0, 0%, 100%, 1);
+$shadow-color-stop-4: hsla(0, 0%, 100%, 0);
+
+.dl-content {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: $line-height;
+
+  dd {
+    align-self: flex-end;
+    margin-left: $gutter;
+    max-width: 22.75rem;
+  }
+}
+
+table {
+  background: radial-gradient(ellipse at left, $shadow-color-stop-2 0%, $shadow-color-stop-1 75%) 0 center,
+              radial-gradient(ellipse at right, $shadow-color-stop-2 0%, $shadow-color-stop-1 75%) 100% center;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+  background-size: 10px 100%, 10px 100%;
+  border: .5px solid color(shark-gray, dark);
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: inline-block;
+  margin-bottom: $line-height;
+  margin-top: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  text-align: left;
+}
+
+thead th {
+  background-color: color(steel-blue, dark);
+  border-bottom: 1px solid color(shark-gray, dark);
+  color: $inverted-text-color;
+  font-feature-settings: 'smcp', 'c2sc';
+  line-height: .8rem;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  border-right: .5px solid color(shark-gray, dark);
+  padding: (.7rem / 2) .7rem;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+  min-width: 15rem;
+}
+
+td:last-child {
+  background-image: linear-gradient(to left, $shadow-color-stop-3 50%, $shadow-color-stop-4 100%);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+td:first-child {
+  background-image: linear-gradient(to right, $shadow-color-stop-3 50%, $shadow-color-stop-4 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+th {
+  border-right: .5px solid $inverted-text-color;
+  line-height: $line-height;
+  vertical-align: bottom;
+}
+
+td {
+  border-top: .5px solid color(shark-gray, dark);
+  font-size: $font-size-small;
+  line-height: 1.1rem;
+  vertical-align: top;
+}

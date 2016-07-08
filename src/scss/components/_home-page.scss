@@ -1,0 +1,49 @@
+.article-info {
+  display: flex;
+  flex-flow: column;
+}
+
+.author-name {
+  font-weight: 700;
+}
+
+.multi-column {
+  display: flex;
+  flex-flow: column;
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: $line-height;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  li::before {
+    content: '';
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $bp-lg) {
+  .post-list {
+    li {
+      display: flex;
+      flex-flow: row;
+
+      a {
+        flex: 1;
+        margin-right: $gutter;
+      }
+
+      span {
+        align-self: flex-end;
+        flex: 0 1 auto;
+      }
+    }
+  }
+}

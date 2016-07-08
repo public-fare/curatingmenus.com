@@ -1,0 +1,22 @@
+header {
+  margin-bottom: 1.25rem;
+
+  h1 {
+    flex: 1;
+    // padding-top: $line-height;
+    text-transform: uppercase;
+  }
+}
+
+.subtitle {
+  flex: 1;
+  font-size: $font-size-lg;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: $bp-lg) {
+  header {
+    flex-flow: row;
+    height: 33vh;
+  }
+}

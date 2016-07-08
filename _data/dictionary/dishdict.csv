@@ -1,0 +1,10 @@
+label,gloss,datatype,missing,creator,description
+id,identifier for a dish,id,no,web application,corresponds to dish_id in MenuItem.csv
+name,name of dish,string,no,volunteer transcribers,"This value matches what the transcriber typed. Sometimes the dish name matches exactly what was printed on the original menu; however, transcribers had various punctuation and capitalization practices, and sometimes relied on contextual information provided by the layout or other items on the menu."
+description,"n/a","n/a",yes,"n/a",contains no data
+menus_appeared,total count of menus on which dish with this id appears,integer,no,web application,
+times_appeared,total count of appearances of the dish with this id across all menus,integer,no,web application,
+first_appeared,earliest year of a menu on which a dish with this id appears,date (YYYY),no,"web application, based on NYPL metadata for menus",
+last_appeared,latest year of a menu on which a dish with this id appears,date (YYYY),no,"web application, based on NYPL metadata for menus",
+lowest_price,lowest price associated with a dish with a given id,float,yes,volunteer transcribers,"Some menus are in other currencies than dollars; also transcribers did not always make distinctions between dollar amounts and cent amounts leading to errors in the data."
+highest_price,highest price associated with a dish with a given id,float,yes,volunteer transcribers,

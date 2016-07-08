@@ -1,0 +1,21 @@
+label,gloss,datatype,missing,creator,description
+id,identifier for menu,id,no,web application,corresponds to menu_id
+name,,n/a,yes,n/a,contains no data
+sponsor,"who sponsored the meal (organizations, people, name of restaurant)",string,yes,NYPL metadata,
+event,"category (lunch, annual dinner)",string,yes,NYPL metadata,Information in this category varies widely.
+venue,"type of place (commercial, social, professional)",string,yes,NYPL metadata,Information in this category varies widely.
+place,where the meal took place (often a geographic location),string,yes,NYPL metadata,"These vary widely (street address, cities, names of restaurants; names of a ships or train). NYPL has been crowdsourcing more precise geolocations for menus but this data is not available in these files."
+physical_description,dimension and material description of the menu,string,yes,NYPL metadata,
+occasion,"occasion of the meal (holidays, anniversaries, daily)",string,yes,NYPL metadata,This field likely comes from Buttolph’s original organization of the menu collection.
+notes,notes by librarians about the original material,string,yes,NYPL metadata,
+call_number,call number of the menu,string,yes,NYPL metadata,
+keywords,,n/a,yes,n/a,contains no data
+language,,n/a,yes,n/a,contains no data
+date,date of the menu,date (YYYY-MM-DD),yes,NYPL metadata,contains no data
+location,organization or business who produced the menu,string,no,NYPL metadata,
+location_type,,n/a,yes,n/a,contains no data
+currency,"system of money the menu uses (dollars, etc.)",string,yes,NYPL metadata,
+currency_symbol,"symbol for the currency ($, etc.)",string,yes,NYPL metadata,
+status,"completeness of the menu transcription (transcribed, under review, etc.)",string,no,web application,
+page_count,how many pages the menu has,integer,no,web application,
+dish_count,how many dishes the menu has,integer,no,web application,

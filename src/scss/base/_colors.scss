@@ -1,0 +1,25 @@
+$shark-gray: hsl(0, 0%, 15%);
+$steel-blue: hsl(200, 81%, 40%);
+
+$colors: (
+  shark-gray: (
+    x-light: lighten($shark-gray, 80%),
+    light: lighten($shark-gray, 60%),
+    mid: lighten($shark-gray, 30%),
+    dark: $shark-gray
+  ),
+  steel-blue: (
+    light: lighten($steel-blue, 30%),
+    mid: $steel-blue,
+    dark: darken($steel-blue, 20%)
+  )
+);
+
+$body-bg-color: #fffdfd;
+$text-color: color(shark-gray, dark);
+$inverted-text-color: $body-bg-color;
+
+body {
+  background-color: $body-bg-color;
+  color: $text-color;
+}

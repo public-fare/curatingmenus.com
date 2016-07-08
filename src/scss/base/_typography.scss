@@ -1,0 +1,55 @@
+// Typography-related variables
+$font-size-base: 21px;
+$font-size-small: .8rem;
+$font-size-lg: 1.25rem;
+
+// Ideally only use h1 – h3
+$font-size-h1: 2.441rem;
+$font-size-h2: 1.953rem;
+$font-size-h3: 1.563rem;
+$font-size-h4: 1.25rem;
+$font-size-h5: 1rem;
+
+$font-family-sans-serif: 'freight-sans-pro';
+$headings-font-family: 'neuzeit-grotesk-condensed';
+
+$line-height: 1.35rem;
+
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  font-family: $font-family-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-feature-settings: 'kern' 1;
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: $line-height;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  color: color(steel-blue, dark);
+  font-family: $headings-font-family, sans-serif;
+  font-size: $font-size-h1;
+  line-height: 2.441rem;
+}
+
+h2 {
+  border-top: .5px solid $text-color;
+  color: color(steel-blue, dark);
+  font-family: $headings-font-family, sans-serif;
+  font-size: $font-size-h2;
+  line-height: 1.953rem;
+  padding-top: ($line-height / 2);
+}
+
+h3 {
+  font-feature-settings: 'smcp', 'c2sc';
+  font-weight: 300;
+  line-height: 1.25rem;
+}
+
+.date-span {
+  white-space: nowrap;
+}

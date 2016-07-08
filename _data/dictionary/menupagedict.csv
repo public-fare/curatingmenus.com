@@ -1,0 +1,8 @@
+label,gloss,datatype,missing,creator,description
+id,identifier for menu page,id,no,web application,
+menu_id,identifier for menu,id,no,web application,corresponds to Menu.csv id
+page_number,number representing sequence of page in the menu,integer,yes,web application,
+image_id,identifier for the page image,id,no,web application,
+full_height,height of the page image in pixels,integer,yes,web application,
+full_width,width of the page image in pixels,integer,yes,web application,
+uuid,universally unique identifier for the highest resolution version of the image,id,no,web application,
